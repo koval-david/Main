@@ -64,5 +64,11 @@ int main ( void )  //main function that....
     while (1) {	
 		
     }
-        
+        DELAY_MS(500);
+        for (pulse_width=P_MIN; pulse_width < P_MAX; pulse_width++) {
+            DELAY_MS(500);
+        }
+        for (pulse_width=P_MAX; pulse_width > P_MIN; pulse_width--) {
+            DELAY_MS(500);
+        }
 }
